@@ -108,9 +108,10 @@ enum class DGUS_Addr : uint16_t {
   SD_FileName4            = 0x30A5, // 0x30A5 - 0x30C4
   SD_ScrollIcons          = 0x30C5, // Bits: DGUS_Data::ScrollIcon
   SD_SelectedFileName     = 0x30C6, // 0x30C6 - 0x30E5
-  STATUS_PositionZ        = 0x30E6, // Type: Fixed point, 2 decimal (32 bits signed)
-  STATUS_Elapsed          = 0x30E8, // 0x30E8 - 0x30F6
-  STATUS_Percent          = 0x30F7, // Type: Integer (16 bits unsigned)
+  STATUS_PositionZ        = 0x30E6, // Type: Fixed point, 1 decimal (16 bits signed)
+  STATUS_Elapsed          = 0x30E7, // 0x30E7 - 0x30F5
+  STATUS_Percent          = 0x30F6, // Type: Integer (16 bits unsigned)
+  STATUS_Icons            = 0x30F7, // Bits: DGUS_Data::StatusIcon
   ADJUST_Feedrate         = 0x30F8, // Type: Integer (16 bits signed)
   ADJUST_Flowrate_CUR     = 0x30F9, // Type: Integer (16 bits signed)
   #if HAS_MULTI_EXTRUDER
@@ -156,7 +157,6 @@ enum class DGUS_Addr : uint16_t {
   INFOS_LongestPrint      = 0x318D, // 0x318D - 0x31A4
   INFOS_FilamentUsed      = 0x31A5, // 0x31A5 - 0x31BC
   WAIT_Icons              = 0x31BD, // Bits: DGUS_Data::WaitIcon
-  STATUS_Icons            = 0x31BE, // Bits: DGUS_Data::StatusIcon
 
   // READ-WRITE VARIABLES
 
