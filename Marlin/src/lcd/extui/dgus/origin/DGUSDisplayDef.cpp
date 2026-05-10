@@ -208,9 +208,9 @@ const struct DGUS_VP_Variable ListOfVP[] PROGMEM = {
   // Fan Data
   #if HAS_FAN
     #define FAN_VPHELPER(N) \
-      VPHELPER(VP_Fan##N##_Percentage, &thermalManager.fan_speed[N], ScreenHandler.DGUSLCD_PercentageToUint8, ScreenHandler.DGUSLCD_SendPercentageToDisplay), \
-      VPHELPER(VP_FAN##N##_CONTROL, &thermalManager.fan_speed[N], ScreenHandler.HandleFanControl, nullptr), \
-      VPHELPER(VP_FAN##N##_STATUS, &thermalManager.fan_speed[N], nullptr, ScreenHandler.DGUSLCD_SendFanStatusToDisplay),
+      VPHELPER(VP_Fan1_Percentage, &thermalManager.fan_speed[N], ScreenHandler.DGUSLCD_PercentageToUint8, ScreenHandler.DGUSLCD_SendPercentageToDisplay), \
+      VPHELPER(VP_FAN1_CONTROL, &thermalManager.fan_speed[N], ScreenHandler.HandleFanControl, nullptr), \
+      VPHELPER(VP_FAN1_STATUS, &thermalManager.fan_speed[N], nullptr, ScreenHandler.DGUSLCD_SendFanStatusToDisplay),
     REPEAT(FAN_COUNT, FAN_VPHELPER)
   #endif
 

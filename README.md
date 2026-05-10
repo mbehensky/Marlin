@@ -1,5 +1,20 @@
 <p align="center"><img src="buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png" height="250" alt="MarlinFirmware's logo" /></p>
 
+This is a customised version of Marlin for the Ender 5 Plus to work with the BTT SKR 3 mainboard and using the stock LCD. 
+
+The stock LCD needs to be flashed with a custom LCD firmware available from https://github.com/Desuuuu/DGUS-reloaded/wiki/Flashing-the-firmware or it will not work with anything other than the stock main board, and the very buggy and outdated version of Marlin that Creality created 5,000 years ago.
+
+The LCD will also need the cable modifying to fit the SKR 3 mainboard, this is a very simple modification and can be done in several ways. I'll add a diagram with pictures showing how it's done once I can figure out how to insert images into this page. (four pins, tx2-pa10 rx2-pa9 gnd-g 5v-+5v, clearly labelled on the silkscreens!)
+
+I have made the compiled Firmware.bin file available in the root of this repo, so you can just copy it onto a micro SD card, plug it into the SKR 3 and power on. Once it stops flashing, power it off, remove the SD card and it will be ready to use. 
+
+However, every change I made to the most recent Marlin Bugtree branch is included here too so you can easily make the neccessary changes that you will VERY probably need to make to calibrate this firmware to work correctly with your setup. This is because I haven't got round to learning that side of things, I just wanted to prove the Stock LCD screen could be very easily made to work with Marlin on the SKR 3 and other SKR boards (and klipper too, but there's already a fork for that available from Desuuuu, though I've not tested it as of yet on the SKR 3)
+
+Hope this helps a lot of people save money when they choose to upgrade/replace their main boards, so they're not pushed into purchasing a non-needed, and non-fitting, LCD (like the tft35) :)
+
+Feel free to comment or reach out if you need assitance with anything, or want to leave me any feedback. I thrive on feedback of any kind, so be as blunt and direct or harsh as you feel like. It'll help make a better build for everyone :) 
+
+If you feel like buying me a coffee as a thanks, could you please make a donation to Viva instead https://viva.org.uk/donations/viva-donation-form/
 <h1 align="center">Marlin 3D Printer Firmware</h1>
 
 <p align="center">
@@ -95,42 +110,42 @@ Regular users can open and close their own issues, but only the administrators c
 <tr><td>Project Maintainer</td></tr>
 <tr><td>
 
- 🇺🇸  **Scott Lahteine**  
-       [@thinkyhead](https://github.com/thinkyhead)  
+ 🇺🇸  **Scott Lahteine**
+       [@thinkyhead](https://github.com/thinkyhead)
        [<kbd>  Donate 💸  </kbd>](https://www.thinkyhead.com/donate-to-marlin)
 
 </td><td>
 
- 🇺🇸  **Roxanne Neufeld**  
-       [@Roxy-3D](https://github.com/Roxy-3D)  
-       
- 🇺🇸  **Keith Bennett**  
-       [@thisiskeithb](https://github.com/thisiskeithb)  
+ 🇺🇸  **Roxanne Neufeld**
+       [@Roxy-3D](https://github.com/Roxy-3D)
+
+ 🇺🇸  **Keith Bennett**
+       [@thisiskeithb](https://github.com/thisiskeithb)
        [<kbd>  Donate 💸  </kbd>](https://github.com/sponsors/thisiskeithb)
- 
- 🇺🇸  **Jason Smith**  
+
+ 🇺🇸  **Jason Smith**
        [@sjasonsmith](https://github.com/sjasonsmith)
 
 </td><td>
 
- 🇧🇷  **Victor Oliveira**  
+ 🇧🇷  **Victor Oliveira**
        [@rhapsodyv](https://github.com/rhapsodyv)
- 
- 🇬🇧  **Chris Pepper**  
+
+ 🇬🇧  **Chris Pepper**
        [@p3p](https://github.com/p3p)
-       
-🇳🇿  **Peter Ellens**  
-       [@ellensp](https://github.com/ellensp)  
+
+🇳🇿  **Peter Ellens**
+       [@ellensp](https://github.com/ellensp)
        [<kbd>  Donate 💸  </kbd>](https://ko-fi.com/ellensp)
 
 </td><td>
 
- 🇺🇸  **Bob Kuhn**  
+ 🇺🇸  **Bob Kuhn**
        [@Bob-the-Kuhn](https://github.com/Bob-the-Kuhn)
-       
- 🇳🇱  **Erik van der Zalm**  
-       [@ErikZalm](https://github.com/ErikZalm)  
-       [<kbd>  Donate 💸  </kbd>](https://flattr.com/submit/auto?user_id=ErikZalm&url=https://github.com/MarlinFirmware/Marlin&title=Marlin&language=&tags=github&category=software)  
+
+ 🇳🇱  **Erik van der Zalm**
+       [@ErikZalm](https://github.com/ErikZalm)
+       [<kbd>  Donate 💸  </kbd>](https://flattr.com/submit/auto?user_id=ErikZalm&url=https://github.com/MarlinFirmware/Marlin&title=Marlin&language=&tags=github&category=software)
 
 </td></tr>
 </table>
